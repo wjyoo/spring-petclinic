@@ -17,6 +17,8 @@ package org.springframework.samples.petclinic.vet;
 
 import java.util.Map;
 
+import com.codahale.metrics.annotation.Metered;
+import com.codahale.metrics.annotation.Timed;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,6 +40,8 @@ class VetController {
         this.vets = clinicService;
     }
 
+    @Timed
+    @Metered
     @RequestMapping(value = { "/vets.html" })
     public String showVetList(Map<String, Object> model) {
         // Here we are returning an object of type 'Vets' rather than a collection of Vet
