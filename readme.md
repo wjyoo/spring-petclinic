@@ -4,13 +4,17 @@
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
-## Running petclinic locally
+## Running petclinic locally with stagemonitor enabled
 ```
-	git clone https://github.com/spring-projects/spring-petclinic.git
-	mvn tomcat7:run
+git clone https://github.com/stagemonitor/spring-petclinic.git
+cd spring-petclinic
+# optional: spin up the stagemonitor backend and dashboards. Requires docker and docker-compose
+# adjust settings in src/main/resources/stagemonitor.properties and docker-compose.yml according to your environment
+# docker-compose up -d
+mvn tomcat7:run
 ```
 
-You can then access petclinic here: http://localhost:9966/petclinic/
+You can then access petclinic here: [http://localhost:9966/petclinic/]()
 
 ## In case you find a bug/suggested improvement for Spring Petclinic
 Our issue tracker is available here: https://github.com/spring-projects/spring-petclinic/issues
@@ -61,7 +65,7 @@ File -> Import -> Maven -> Existing Maven project
   <tr>
     <td>Java Config branch</td>
     <td>
-      Petclinic uses XML configuration by default. In case you'd like to use Java Config instead, there is a Java Config branch available <a href="https://github.com/spring-projects/spring-petclinic/tree/javaconfig">here</a>. Thanks to Antoine Rey for his contribution.     
+      Petclinic uses XML configuration by default. In case you'd like to use Java Config instead, there is a Java Config branch available <a href="https://github.com/spring-projects/spring-petclinic/tree/javaconfig">here</a>. Thanks to Antoine Rey for his contribution.
     </td>
   </tr>
   <tr>
