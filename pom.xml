@@ -44,7 +44,7 @@
 
         <cobertura.version>2.7</cobertura.version>
 
-        <stagemonitor.version>0.27.2</stagemonitor.version>
+        <stagemonitor.version>0.80.0-SNAPSHOT</stagemonitor.version>
     </properties>
 
     <dependencyManagement>
@@ -84,6 +84,11 @@
         <dependency>
             <groupId>org.stagemonitor</groupId>
             <artifactId>stagemonitor-alerting</artifactId>
+            <version>${stagemonitor.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.stagemonitor</groupId>
+            <artifactId>stagemonitor-tracing-elasticsearch</artifactId>
             <version>${stagemonitor.version}</version>
         </dependency>
         <dependency>
