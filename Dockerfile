@@ -16,7 +16,7 @@ ENV CATALINA_OPTS="$CATALINA_OPTS -javaagent:/opt/aspectj/aspectjweaver-1.8.2.ja
 
 # Pull petclinic
 
-RUN git clone https://github.com/**\<account_id>**/spring-petclinic.git
+RUN git clone https://github.com/wjyoo/spring-petclinic.git
 
 # Build petclinic
 
